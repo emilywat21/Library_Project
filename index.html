@@ -17,6 +17,20 @@
       <div>
         <h1>Library Project</h1>
         <div id="library">
+
+          <form id="form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title"><br><br>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author"><br><br>
+
+            <label for="read">Read:</label>
+            <input type="checkbox" id="read" name="read"><br><br>
+
+            <button type="submit" id="button">Add Book</button>
+          </form>
+
           <!-- Add table here -->
           <table id="table" style="min-width: 680px; margin: 2rem">
             <thead>
@@ -25,8 +39,9 @@
                 <th>Author</th>
                 <th>Read</th>
               </tr>
+          
             </thead>
-            <tbody>
+            <tbody id="tableBody">
               <tr>
                 <td>Name of the Wind</td>
                 <td>Patrick Rothfuss</td>
